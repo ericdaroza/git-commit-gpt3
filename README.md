@@ -1,0 +1,69 @@
+# Git GPT-3 Commit
+
+This repository hosts a unique Node.js script that uses OpenAI's GPT-3 model to generate meaningful Git commit messages based on the changes made. The script provides a summarized output of the 'git diff --staged' command and uses it as a prompt for the GPT-3 model, which then creates a commit message that adheres to the Conventional Commits specifications. Users have the option to accept or reject the generated message before the commit is made.
+
+### Prerequisites
+
+Before you begin, ensure that you have the following installed on your machine:
+
+- Node.js and npm (Node Package Manager)
+- Git
+- An OpenAI API Key, which you'll need to store in a .env file in the root of your project as `OPENAI_API_KEY=your_key_here`.
+
+### Setting Up the Script
+
+The script requires a few dependencies, which you can install by navigating to the project directory and running the following command:
+
+```bash
+$ npm install
+```
+
+This will install the required dependencies listed in the package.json file: [dotenv](https://www.npmjs.com/package/dotenv), [openai](https://www.npmjs.com/package/openai), [prompts](https://www.npmjs.com/package/prompts).
+
+### Creating a Symbolic Link
+
+In order for the script to be executable from any Git repository, you need to create a symbolic link to it using npm's link command. From your project's root directory, run:
+
+```bash
+$ npm link
+```
+
+This command will create a global symbolic link (symlink) named git-gpt3-commit, which points to your script. With this symlink, you can run the script from any Git repository on your system.
+
+### Using the Git Extension
+
+Once the symlink is created, you can test the script in any of your Git repositories. After making some changes in your repository, stage your changes with:
+
+```bash
+$ git add .
+```
+
+Then, to generate and review a commit message using the AI model, run:
+
+```bash
+$ git gpt3-commit
+```
+
+If there are no changes staged for commit, the script will inform you and cancel the commit process. However, if changes are detected, it will use these changes to generate a commit message, which you can then review and approve before it is used to commit your changes.
+
+### Removing the Symbolic Link
+
+If you no longer need to use the extension or if you wish to uninstall it, you can remove the symbolic link by navigating to your project directory and running:
+
+```bash
+$ npm unlink
+```
+
+This command will remove the git-gpt3-commit symlink from the global node_modules directory.
+
+### Conclusion
+
+`git-commit-gpt3` is an innovative way to utilize AI capabilities to streamline your Git workflow. With this extension, you can generate meaningful and standardized commit messages based on the actual changes you made. Try it out to bring more clarity and consistency to your commit history!
+
+I would like to express our gratitude to [Anis Marrouchi](https://www.linkedin.com/in/marrouchi/), whose insightful [LinkedIn article](https://www.linkedin.com/pulse/auto-generating-git-commit-messages-openai-gpt-3-anis-marrouchi/) on auto-generating Git commit messages with OpenAI GPT-3 provided the foundation and inspiration for this script.
+
+For further exploration and examples of harnessing AI for Git commits, we recommend checking out his repository [git-commit-gpt](https://github.com/nooqta/git-commit-gpt) on GitHub.
+
+I believe that AI can be a powerful tool in automating and enhancing various aspects of software development, and this is just one example. Happy coding!
+
+
