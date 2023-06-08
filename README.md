@@ -74,6 +74,24 @@ $ npm unlink
 
 This command will remove the git-gpt3-commit symlink from the global node_modules directory.
 
+### Contributing
+We appreciate your interest in contributing to our project! Whether you want to report a bug, suggest a feature, or ask a question, we welcome your input. To ensure a smooth and collaborative process, please follow the guidelines below:
+
+### Opening an Issue
+If you encounter a bug, have a feature request, or need clarification, please consider opening an issue using one of the provided templates. This will help us understand your needs and ensure a prompt response.
+
+Before opening a new issue, please take a moment to search the existing issues to see if a similar topic has already been raised. This can help avoid duplication and provide valuable insights from previous discussions.
+
+### Contributing Code
+If you would like to contribute code to the project, we encourage you to fork the repository and submit a pull request. Before starting your work, please ensure that you have reviewed our [contribution guidelines](CONTRIBUTING.md) for detailed instructions on the development process.
+
+We value the time and effort of all contributors, and we will do our best to provide feedback and keep the lines of communication open throughout the process.
+
+### Be Friendly and Respectful
+Remember to maintain a friendly and respectful tone when interacting with other contributors and maintainers. We strive to foster a welcoming and inclusive community where everyone feels comfortable and supported.
+
+Thank you for your interest in contributing to our project. Your involvement and feedback are highly appreciated!
+
 ### Conclusion
 
 `git-commit-gpt3` is an innovative way to utilize AI capabilities to streamline your Git workflow. With this extension, you can generate meaningful and standardized commit messages based on the actual changes you made. Try it out to bring more clarity and consistency to your commit history!
