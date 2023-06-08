@@ -2,7 +2,7 @@
 
 This repository hosts a unique Node.js script that uses OpenAI's GPT-3 model to generate meaningful Git commit messages based on the changes made. The script provides a summarized output of the 'git diff --staged' command and uses it as a prompt for the GPT-3 model, which then creates a commit message that adheres to the Conventional Commits specifications. Users have the option to accept or reject the generated message before the commit is made.
 
-### Prerequisites
+## Prerequisites
 
 Before you begin, ensure that you have the following installed on your machine:
 
@@ -10,7 +10,7 @@ Before you begin, ensure that you have the following installed on your machine:
 - Git
 - An OpenAI API Key, which you'll need to store in a .env file in the root of your project as `OPENAI_API_KEY=your_key_here`.
 
-### Cloning the Repository
+## Cloning the Repository
 To clone the repository and start using the script, follow these steps:
 
 1. Open your terminal.
@@ -28,7 +28,7 @@ $ cd git-commit-gpt3
 ```
 Now you can proceed to the setup.
 
-### Setting Up the Script
+## Setting Up the Script
 
 The script requires a few dependencies, which you can install by navigating to the project directory and running the following command:
 
@@ -74,7 +74,7 @@ $ npm unlink
 
 This command will remove the git-gpt3-commit symlink from the global node_modules directory.
 
-### Contributing
+## Contributing
 We appreciate your interest in contributing to our project! Whether you want to report a bug, suggest a feature, or ask a question, we welcome your input. To ensure a smooth and collaborative process, please follow the guidelines below:
 
 ### Opening an Issue
@@ -92,7 +92,7 @@ Remember to maintain a friendly and respectful tone when interacting with other 
 
 Thank you for your interest in contributing to our project. Your involvement and feedback are highly appreciated!
 
-### Conclusion
+## Conclusion
 
 `git-commit-gpt3` is an innovative way to utilize AI capabilities to streamline your Git workflow. With this extension, you can generate meaningful and standardized commit messages based on the actual changes you made. Try it out to bring more clarity and consistency to your commit history!
 
