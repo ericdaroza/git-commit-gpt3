@@ -10,6 +10,24 @@ Before you begin, ensure that you have the following installed on your machine:
 - Git
 - An OpenAI API Key, which you'll need to store in a .env file in the root of your project as `OPENAI_API_KEY=your_key_here`.
 
+### Cloning the Repository
+To clone the repository and start using the script, follow these steps:
+
+1. Open your terminal.
+2. Choose a directory for the project.
+3. Run the following command to clone the repository:
+
+```bash
+$ git clone https://github.com/ericdaroza/git-commit-gpt3.git
+```
+
+Move into the newly created directory:
+
+```bash
+$ cd git-commit-gpt3
+```
+Now you can proceed to the setup.
+
 ### Setting Up the Script
 
 The script requires a few dependencies, which you can install by navigating to the project directory and running the following command:
