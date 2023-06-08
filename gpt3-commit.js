@@ -59,16 +59,16 @@ async function getGitSummary() {
         });
 
         const message = completion.data.choices[0].text.trim();
+        const commitMessage = `git commit -m "${message.replace(/\n/g, '\\n')}"`;
 
         const confirm = await prompts({
             type: 'confirm',
             name: 'value',
-            message: `Suggested commit message: "${message}". Do you want to use it?`,
+            message: `Suggested commit message: \n\n    ${message}\n\nDo you want to use it?`,
             initial: true,
         });
-
         if (confirm.value) {
-            require('child_process').execSync(`git commit -m "${message}"`);
+            require('child_process').execSync(commitMessage, { stdio: 'inherit' });
             console.log('Committed with the suggested message.');
         } else {
             console.log('Commit canceled.');
